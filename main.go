@@ -25,8 +25,8 @@ func main() {
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 1, ' ', tabwriter.Debug)
 
 	fmt.Fprintf(w, "Score\t%d\n", latestData.Score)
-	fmt.Fprintf(w, "Temp\t%f\n", latestData.Temp)
-	fmt.Fprintf(w, "Humidity\t%f\n", latestData.Humid)
+	fmt.Fprintf(w, "Temp\t%.2f\n", latestData.Temp)
+	fmt.Fprintf(w, "Humidity\t%.2f\n", latestData.Humid)
 	fmt.Fprintf(w, "CO2\t%d\n", latestData.CO2)
 	fmt.Fprintf(w, "VOC\t%d\n", latestData.VOC)
 	fmt.Fprintf(w, "PM2.5\t%d\n", latestData.PM25)

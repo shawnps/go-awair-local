@@ -17,6 +17,10 @@ func main() {
 	flag.StringVar(&addr, "addr", "", "your Awair's local HTTP server address")
 	flag.Parse()
 
+	if addr == "" {
+		log.Fatal("-addr is required")
+	}
+
 	client := awair.NewClient(addr)
 
 	latestData, err := client.LatestData()

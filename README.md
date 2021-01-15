@@ -1,5 +1,5 @@
 # go-awair-local
-Go client library for Awair's local HTTP server. Also a small command line program for showing the data on a terminal.
+Go client library for Awair's local HTTP server. Also a command line program for showing the data on a terminal.
 
 ![go-awair-local-screenshot](images/go-awair-local.png)
 

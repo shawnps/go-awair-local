@@ -52,9 +52,5 @@ func (c *Client) LatestData() (AirData, error) {
 	dec := json.NewDecoder(resp.Body)
 
 	err = dec.Decode(&ad)
-	if err != nil {
-		return ad, err
-	}
-
-	return ad, nil
+	return ad, err
 }
